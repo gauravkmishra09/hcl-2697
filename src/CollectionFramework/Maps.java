@@ -8,7 +8,7 @@ public class Maps {
         mp.put(3,"abhi");
         mp.put(4,"sam");
         System.out.println(mp);
-        mp.get(2);
+        System.out.println(mp.get(2));
 
     }
 }
