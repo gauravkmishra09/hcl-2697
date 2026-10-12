@@ -1,4 +1,4 @@
-package CollectionFramework;
-
-public class ArraylistClass {
+package Lists;
+public class ArraylistClass
+{
 }
