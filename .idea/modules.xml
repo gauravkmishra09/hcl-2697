@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Assignment/Assignment.iml" filepath="$PROJECT_DIR$/Assignment/Assignment.iml" />
       <module fileurl="file://$PROJECT_DIR$/HCL JAVA Full Stack.iml" filepath="$PROJECT_DIR$/HCL JAVA Full Stack.iml" />
     </modules>
   </component>
