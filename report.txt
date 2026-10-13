@@ -1,0 +1,4 @@
+LIBRARY REPORT
+Book[1001, Clean Code, 2008, Robert Martin] - Available
+DVD[1003, Inception, 2010, 148 min] - Available
+Magazine[1002, Wired, 2020, issue 5] - Available
