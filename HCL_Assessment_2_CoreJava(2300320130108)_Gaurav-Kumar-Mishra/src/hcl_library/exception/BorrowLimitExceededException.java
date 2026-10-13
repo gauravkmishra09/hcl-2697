@@ -1,4 +1,4 @@
-package hcl_library;
+package hcl_library.exception;
 
 
 public class BorrowLimitExceededException extends LibraryException {

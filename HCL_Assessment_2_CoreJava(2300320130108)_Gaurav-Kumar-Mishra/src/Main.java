@@ -1,28 +1,50 @@
 package hcl_library;
 
-import hcl_library.model.Book;
-import hcl_library.model.LibraryItem;
-import hcl_library.repository.InMemoryRepository;
+import hcl_library.exception.LibraryException;
+import hcl_library.service.LibraryService;
 
 public class Main {
     public static void main(String[] args) {
-        InMemoryRepository<LibraryItem, Integer> repo =
-                new InMemoryRepository<>(item -> item.getId());
+        LibraryService service = new LibraryService();
 
-        Book book1 = new Book("Clean Code", 2008, "Robert Martin", "111");
-        Book book2 = new Book("Java Basics", 2015, "Ravi", "222");
-        repo.save(book1);
-        repo.save(book2);
+        service.addBook("Clean Code", 2008, "Robert Martin", "111");
+        service.addMagazine("Wired", 2020, 5);
+        service.addDVD("Inception", 2010, 148);
+        service.addBook("Java Basics", 2015, "Ravi", "222");
 
-        for (LibraryItem item : repo.findAll()) {
-            System.out.println(item);
+        service.registerMember("Ravi", "ravi@gmail.com");
+        service.registerMember("Aman", "aman@gmail.com");
+
+        try {
+            System.out.println("Issued: " + service.borrowItem(1, 1001));
+        } catch (LibraryException e) {
+            System.out.println("ERROR: " + e.getMessage());
         }
 
-        System.out.println("Found: " + repo.findById(1001).isPresent());
-        System.out.println("Found: " + repo.findById(5000).isPresent());
+        try {
+            service.borrowItem(2, 1001);
+        } catch (LibraryException e) {
+            System.out.println("ERROR: " + e.getMessage());
+        }
 
-        System.out.println("Deleted: " + repo.deleteById(1001));
-        System.out.println("Deleted again: " + repo.deleteById(1001));
-        System.out.println("Total items: " + repo.findAll().size());
+        try {
+            service.borrowItem(1, 9999);
+        } catch (LibraryException e) {
+            System.out.println("ERROR: " + e.getMessage());
+        }
+
+        try {
+            service.borrowItem(1, 1002);
+            service.borrowItem(1, 1003);
+            service.borrowItem(1, 1004);
+        } catch (LibraryException e) {
+            System.out.println("ERROR: " + e.getMessage());
+        }
+
+        try {
+            service.addBook("Another Book", 2019, "Someone", "111");
+        } catch (LibraryException e) {
+            System.out.println("ERROR: " + e.getMessage());
+        }
     }
 }
