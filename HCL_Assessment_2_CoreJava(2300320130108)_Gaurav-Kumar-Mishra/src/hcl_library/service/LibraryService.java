@@ -12,9 +12,16 @@ import hcl_library.model.Member;
 import hcl_library.repository.InMemoryRepository;
 import hcl_library.repository.Repository;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayDeque;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Queue;
@@ -129,6 +136,70 @@ public class LibraryService {
             Member next = queue.poll();
             System.out.println("Notification: Member " + next.getId() + " (" + next.getName()
                     + ") is next in the waitlist for " + itemId + ".");
+        }
+    }
+
+    public List<LibraryItem> getItemsSortedByTitle() {
+        List<LibraryItem> list = items.findAll();
+        Collections.sort(list);
+        return list;
+    }
+
+    public List<LibraryItem> getItemsSortedByYear() {
+        List<LibraryItem> list = items.findAll();
+        Comparator<LibraryItem> byYear = Comparator.comparing(LibraryItem::getYear)
+                .reversed()
+                .thenComparing(LibraryItem::getTitle);
+        Collections.sort(list, byYear);
+        return list;
+    }
+
+    public int removeOldItems(int beforeYear) {
+        List<LibraryItem> all = items.findAll();
+        Iterator<LibraryItem> iterator = all.iterator();
+        int removed = 0;
+
+        while (iterator.hasNext()) {
+            LibraryItem item = iterator.next();
+            if (item.getYear() < beforeYear) {
+                iterator.remove();
+                items.deleteById(item.getId());
+                if (item instanceof Book) {
+                    isbnSet.remove(((Book) item).getIsbn());
+                }
+                removed++;
+            }
+        }
+        return removed;
+    }
+
+    public Map<String, Integer> countByType() {
+        Map<String, Integer> counts = new HashMap<>();
+        for (LibraryItem item : items.findAll()) {
+            String type = item.getClass().getSimpleName();
+            counts.put(type, counts.getOrDefault(type, 0) + 1);
+        }
+        return counts;
+    }
+
+    public String getReport() {
+        StringBuilder report = new StringBuilder();
+        report.append("LIBRARY REPORT\n");
+        for (LibraryItem item : getItemsSortedByTitle()) {
+            String status = "Available";
+            if (!item.isAvailable()) {
+                status = "Issued";
+            }
+            report.append(item).append(" - ").append(status).append("\n");
+        }
+        return report.toString();
+    }
+
+    public void exportReport(String path) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(path))) {
+            writer.write(getReport());
+        } catch (IOException e) {
+            throw new LibraryException("Could not write report to " + path, e);
         }
     }
 }
