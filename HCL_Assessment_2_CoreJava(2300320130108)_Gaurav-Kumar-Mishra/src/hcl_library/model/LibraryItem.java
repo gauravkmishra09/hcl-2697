@@ -2,7 +2,7 @@ package hcl_library.model;
 
 import java.time.LocalDate;
 
-public abstract class LibraryItem implements Borrowable {
+public abstract class LibraryItem implements Borrowable, Comparable<LibraryItem> {
 
     private static int nextId = 1001;
     private static final int MIN_YEAR = 1900;
@@ -56,6 +56,28 @@ public abstract class LibraryItem implements Borrowable {
     @Override
     public void giveBack() {
         available = true;
+    }
+
+    @Override
+    public int compareTo(LibraryItem other) {
+        return this.title.compareToIgnoreCase(other.title);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        LibraryItem other = (LibraryItem) obj;
+        return this.id == other.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return id;
     }
 
     @Override
