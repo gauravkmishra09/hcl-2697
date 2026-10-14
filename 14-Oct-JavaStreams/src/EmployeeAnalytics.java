@@ -41,6 +41,19 @@ public class EmployeeAnalytics {
                 .toList();
 
         System.out.println(top3);
+        // Q3: Employees hired before 2018-01-01,
+        // oldest hire first, formatted as name (year)
+        System.out.println("\nQ3: Employees hired before 2018");
+
+        List<String> earlyHires = emps.stream()
+                .filter(emp -> emp.hireDate()
+                        .isBefore(LocalDate.of(2018, 1, 1)))
+                .sorted(Comparator.comparing(Employee::hireDate))
+                .map(emp -> emp.name() + " ("
+                        + emp.hireDate().getYear() + ")")
+                .toList();
+
+        System.out.println(earlyHires);
 
     }
 }
