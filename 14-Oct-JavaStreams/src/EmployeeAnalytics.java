@@ -30,6 +30,17 @@ public class EmployeeAnalytics {
                 .toList();
 
         System.out.println(engNames);   // [Ravi, Priya, Asha]
+        // Q2: Top 3 earners overall
+        System.out.println("\nQ2: Top 3 earners");
+
+        List<String> top3 = emps.stream()
+                .sorted(Comparator.comparing(Employee::salary)
+                        .reversed())
+                .limit(3)
+                .map(Employee::name)
+                .toList();
+
+        System.out.println(top3);
 
     }
 }
