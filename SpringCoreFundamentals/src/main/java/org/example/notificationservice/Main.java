@@ -9,5 +9,6 @@ public class Main {
         Student student = ctx.getBean(Student.class);
         student.notifyStudent();
         ctx.close();
+        //full lifecycle
     }
 }
