@@ -5,7 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c0ccf5d-a077-4251-a3d7-26bbf24477b8" name="Changes" comment="spring 21 oct">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/notificationservice/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/notificationservice/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CollectionFramework/ArraylistClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/CollectionFramework/ArraylistClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CollectionFramework/LinkedHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/CollectionFramework/LinkedHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CollectionFramework/Maps.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/CollectionFramework/Maps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CollectionFramework/QueueClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/CollectionFramework/QueueClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CollectionFramework/StackUsingArrayDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/CollectionFramework/StackUsingArrayDeque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExceptionHandling/Exceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/ExceptionHandling/Exceptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExceptionHandling/ThrowDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/ExceptionHandling/ThrowDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lists/12-OCT" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/Lists/12-OCT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lists/13-OCT" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/Lists/13-OCT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lists/BuiltInFunctAndLambda.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/Lists/BuiltInFunctAndLambda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lists/CalculatorUsingLambdaExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/Lists/CalculatorUsingLambdaExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lists/Comparable_Comparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/Lists/Comparable_Comparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lists/GenericClassFull.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/Lists/GenericClassFull.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lists/LambdaForOddEven.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/Lists/LambdaForOddEven.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Module1_Program/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/Module1_Program/Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Module1_Program/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/Module1_Program/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Module1_Program/Solution2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/Module1_Program/Solution2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Streams/ListStreamFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/Streams/ListStreamFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Streams/StringStreamFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/Streams/StringStreamFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task1" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/Task1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/notificationservice/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/notificationservice/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792562897176</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="spring 21 oct">
+      <option name="closed" value="true" />
+      <created>1792563220143</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1792563220143</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
