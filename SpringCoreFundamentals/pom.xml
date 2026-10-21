@@ -13,10 +13,18 @@
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-context</artifactId>
-        <version>6.1.21</version>
+        <version>7.0.8</version>
         <scope>compile</scope>
 
     </dependency>
+
+       <!-- Source: https://mvnrepository.com/artifact/jakarta.annotation/jakarta.annotation-api -->
+       <dependency>
+           <groupId>jakarta.annotation</groupId>
+           <artifactId>jakarta.annotation-api</artifactId>
+           <version>3.0.0</version>
+           <scope>compile</scope>
+       </dependency>
    </dependencies>
 
     <properties>
