@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1c0ccf5d-a077-4251-a3d7-26bbf24477b8" name="Changes" comment="spring 21 oct">
+      <change beforePath="$PROJECT_DIR$/../Module2-Spring/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2-Spring/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hrms/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hrms/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hrms/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hrms/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hrms/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hrms/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hrms/src/main/java/com/abes/hrms/HrmsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hrms/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hrms/src/test/java/com/abes/hrms/HrmsApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;gauravkmishra09&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/gauravkmishra09/hcl-2697.git&quot;,
+    &quot;accountId&quot;: &quot;e6aefd43-8938-48a3-90e9-5103c1c4f4e7&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3KlbXTbP9Htpuw9oT9f8oo9o1HT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "#1 on master",
+    "onboarding.tips.debug.path": "/Users/gauravmishra/Desktop/HCL JAVA Full Stack/SpringCoreFundamentals/src/main/java/org/example/Main.java"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c0ccf5d-a077-4251-a3d7-26bbf24477b8" name="Changes" comment="" />
+      <created>1792135144223</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1792135144223</updated>
+    </task>
+    <task id="LOCAL-00001" summary="spring">
+      <option name="closed" value="true" />
+      <created>1792179633786</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1792179633786</updated>
+    </task>
+    <task id="LOCAL-00002" summary="spring 21 oct">
+      <option name="closed" value="true" />
+      <created>1792562666124</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1792562666124</updated>
+    </task>
+    <task id="LOCAL-00003" summary="spring 21 oct">
+      <option name="closed" value="true" />
+      <created>1792562897176</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1792562897176</updated>
+    </task>
+    <task id="LOCAL-00004" summary="spring 21 oct">
+      <option name="closed" value="true" />
+      <created>1792563220143</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1792563220143</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="spring" />
+    <MESSAGE value="spring 21 oct" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring 21 oct" />
+  </component>
+</project>
