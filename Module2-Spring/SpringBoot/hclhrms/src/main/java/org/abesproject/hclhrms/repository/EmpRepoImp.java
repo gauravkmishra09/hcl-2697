@@ -6,12 +6,22 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 @Component
-public class EmoRepoImp implements EmployeeRepo{
+public class EmpRepoImp implements EmployeeRepo{
     List<Employee> empList=new ArrayList<>();
     @Override
     public String addEmp(Employee emp) {
         empList.add(emp);
         return "Added";
+    }
+    @Override
+    public String addEmpbulk(List<Employee> bulkEmp){
+        List<Employee> emplist = List.of(new Empl)
+
+    }
+
+    @Override
+    public String addEmpBulk(List<Employee> bulkEmp) {
+        return "";
     }
 
     @Override

@@ -6,6 +6,8 @@ import org.abesproject.hclhrms.repository.EmoRepoImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class EmployeeServiceImpl {
     @Autowired
@@ -14,5 +16,8 @@ public class EmployeeServiceImpl {
         Employee emp1=new Employee(1,"Akash","FSD","java","ak@gmail.com");
         impl.addEmp(emp1);
         return "emp1 gone to EmployeeImpl";
+    }
+    public List<Employee> getEmp(){
+        return emprepo.getEmp();
     }
 }
