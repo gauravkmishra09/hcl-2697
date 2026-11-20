@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class EmpRepoImp implements EmployeeRepo {
+public class EmployeeRepo {
     List<Employee> emplist=new ArrayList<>();
 
     @Override

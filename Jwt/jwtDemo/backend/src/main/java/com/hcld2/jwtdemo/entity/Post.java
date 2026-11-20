@@ -21,11 +21,12 @@ public class Post {
     private String content;
     @Column(nullable = false)
     private String author;
-    private LocalDateTime createdAt=LocalDateTime.now();
+    private LocalDateTime createdAt = LocalDateTime.now();
 
     public Post(String title, String content, String author) {
         this.title = title;
-        this.author=author;
+        this.author = author;
         this.content = content;
     }
 }
+

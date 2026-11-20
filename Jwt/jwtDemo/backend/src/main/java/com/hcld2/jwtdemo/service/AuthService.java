@@ -19,19 +19,19 @@ public class AuthService {
 
     @Transactional
     public StatusResponse registerUser(AuthRequest authRequest) {
-        if(users.findByUsername(authRequest.username()).isPresent()){
-            return new StatusResponse("error","Username already in use");
+        if (users.findByUsername(authRequest.username()).isPresent()) {
+            return new StatusResponse("error", "Username already in use");
         }
         users.save(new User(authRequest.username(), encoder.encode(authRequest.password())));
-        return new StatusResponse("message","User successfully registered");
+        return new StatusResponse("message", "User successfully registered");
     }
 
     public AuthResponse login(AuthRequest req) {
         var user = users.findByUsername(req.username()).orElse(null);
-                if(user == null || !encoder.matches(req.password(), user.getPassword())){
-                    return new AuthResponse("error","username or password is incorrect");
-                }
+        if (user == null || !encoder.matches(req.password(), user.getPassword())) {
+            return new AuthResponse("error", "username or password is incorrect");
+        }
         return new AuthResponse(jwt.generateToken(user.getUsername()), user.getUsername());
     }
-
 }
+

@@ -5,22 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7f79efc-b248-4dd4-9411-53b537773389" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hrms/src/main/java/com/abes/hrms/model/demoEmployee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hrms/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hrms/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hrms/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hrms/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hrms/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hrms/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hrms/src/main/java/com/abes/hrms/HrmsApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hrms/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hrms/src/test/java/com/abes/hrms/HrmsApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hclhrms/src/main/java/org/abesproject/hclhrms/repository/EmployeeRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/hclhrms/src/main/java/org/abesproject/hclhrms/repository/EmployeeRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrmsFrontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/hrmsFrontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrmsFrontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/hrmsFrontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrmsFrontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/hrmsFrontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrmsFrontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/hrmsFrontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrmsFrontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/hrmsFrontend/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +52,8 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "#1 on master",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/gauravmishra/Desktop/HCL JAVA Full Stack/Module2-Spring/SpringBoot",
     "onboarding.tips.debug.path": "/Users/gauravmishra/Desktop/HCL JAVA Full Stack/Module2-Spring/SpringBoot/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",

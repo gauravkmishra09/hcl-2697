@@ -1,0 +1,13 @@
+{
+  "name": "node-test",
+  "version": "1.0.0",
+  "description": "Node.js built-in test runner demo",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

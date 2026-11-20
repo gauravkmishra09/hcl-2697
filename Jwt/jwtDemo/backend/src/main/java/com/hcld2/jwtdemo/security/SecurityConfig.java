@@ -1,6 +1,5 @@
 package com.hcld2.jwtdemo.security;
 
-
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -34,26 +33,22 @@ public class SecurityConfig {
                         s -> s.sessionCreationPolicy(
                                 SessionCreationPolicy.STATELESS))
                 .headers(h -> h.frameOptions(
-                        f->f.sameOrigin()))
+                        f -> f.sameOrigin()))
                 .authorizeHttpRequests(
                         auth -> auth.requestMatchers(
-                        "/api/v1/**","/h2-console/**","/error").permitAll()
-                        .requestMatchers(HttpMethod.GET,"/api/v1/posts/**").permitAll()
-                        .requestMatchers(HttpMethod.POST,"/api/v1/posts/**").authenticated()
-                        .anyRequest().authenticated()
-
+                                        "/api/v1/**", "/h2-console/**", "/swagger-ui/**", "/v3/api-docs/**", "/error").permitAll()
+                                .requestMatchers(HttpMethod.GET, "/api/v1/posts/**").permitAll()
+                                .requestMatchers(HttpMethod.POST, "/api/v1/posts/**").authenticated()
+                                .anyRequest().authenticated()
                 )
                 .exceptionHandling(
                         e -> e.authenticationEntryPoint((
-                                req,res,ex)
-                                ->res.sendError(HttpServletResponse.SC_UNAUTHORIZED,"Unauthorized")
+                                req, res, ex)
+                                -> res.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Unauthorized")
                         )
-
-    )
+                )
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
         return http.build();
-
-
     }
 
     @Bean
@@ -64,8 +59,8 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration cfg = new CorsConfiguration();
-        cfg.setAllowedHeaders(List.of("http://localhost:5173"));
-        cfg.setAllowedMethods(List.of("GET","POST","PUT","DELETE","OPTIONS"));
+        cfg.setAllowedOrigins(List.of("http://localhost:5173", "http://localhost:5173/"));
+        cfg.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         cfg.setAllowedHeaders(List.of("*"));
 
         UrlBasedCorsConfigurationSource src = new UrlBasedCorsConfigurationSource();

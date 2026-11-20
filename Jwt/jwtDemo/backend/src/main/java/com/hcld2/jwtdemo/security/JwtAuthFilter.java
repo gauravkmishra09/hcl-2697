@@ -20,6 +20,7 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
     private final JwtService jwtService;
 
+    @Override
     protected void doFilterInternal
             (HttpServletRequest request,
              HttpServletResponse response,
@@ -28,10 +29,10 @@ public class JwtAuthFilter extends OncePerRequestFilter {
         if (header != null && header.startsWith("Bearer ")) {
             String username = jwtService
                     .verifyAndGetUsername(header.substring(7));
-        if(username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
-            var auth = new UsernamePasswordAuthenticationToken(username, null, List.of());
-            SecurityContextHolder.getContext().setAuthentication(auth);
-        }
+            if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
+                var auth = new UsernamePasswordAuthenticationToken(username, null, List.of());
+                SecurityContextHolder.getContext().setAuthentication(auth);
+            }
         }
         filterChain.doFilter(request, response);
     }

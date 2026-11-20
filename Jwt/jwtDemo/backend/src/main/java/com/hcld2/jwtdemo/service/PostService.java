@@ -23,10 +23,10 @@ public class PostService {
                 .toList();
     }
 
-
     @Transactional
     public PostResponse addPost(PostRequest req, String username) {
         Post saved = posts.save(new Post(req.title(), req.content(), username));
         return PostResponse.from(saved);
     }
 }
+

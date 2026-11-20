@@ -1,0 +1,12 @@
+#backend
+
+backend/target
+.idea
+*.iml
+
+
+#frontend
+frontend/node_modules
+frontend/dist
+
+.env

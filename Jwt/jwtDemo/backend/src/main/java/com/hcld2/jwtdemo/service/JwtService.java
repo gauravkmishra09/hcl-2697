@@ -26,15 +26,16 @@ public class JwtService {
         return JWT.create()
                 .withSubject(username)
                 .withIssuedAt(now)
-                .withExpiresAt(new Date(now.getTime()+expireMs))
+                .withExpiresAt(new Date(now.getTime() + expireMs))
                 .sign(algorithm);
     }
+
     public String verifyAndGetUsername(String token) {
         try {
             return verifier.verify(token).getSubject();
-
-        }catch (Exception e) {
+        } catch (Exception e) {
             return null;
         }
     }
 }
+
